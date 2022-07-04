@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="5"
+        android:background="@color/black"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fname"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBE7E7"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lname"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBE7E7"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Mobile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBE7E7"></View>
+
+        <TextView
+            android:id="@+id/tv_accountNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBE7E7"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Action"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#EBE7E7"></View>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        />
+
+</LinearLayout>
