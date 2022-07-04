@@ -1,4 +1,4 @@
-package com.aavss.abbiedemo;
+package com.aavss.abbiedemo.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import com.aavss.abbiedemo.util.Utility;
 
 public class DbAdapter {
     /*TODO : DATABASE NAME*/

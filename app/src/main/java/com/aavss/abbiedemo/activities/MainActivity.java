@@ -1,4 +1,4 @@
-package com.aavss.abbiedemo;
+package com.aavss.abbiedemo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 
+import com.aavss.abbiedemo.db.DbAdapter;
+import com.aavss.abbiedemo.R;
+import com.aavss.abbiedemo.util.Utility;
 import com.aavss.abbiedemo.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {

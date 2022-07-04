@@ -1,8 +1,6 @@
-package com.aavss.abbiedemo;
+package com.aavss.abbiedemo.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.aavss.abbiedemo.interfaces.ItemClickListener;
+import com.aavss.abbiedemo.R;
 import com.aavss.abbiedemo.data.User;
+import com.aavss.abbiedemo.db.DbAdapter;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.aavss.abbiedemo;
+package com.aavss.abbiedemo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,8 +6,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 
+import com.aavss.abbiedemo.db.DbAdapter;
+import com.aavss.abbiedemo.interfaces.ItemClickListener;
+import com.aavss.abbiedemo.adapter.ListRecyclerviewAdapter;
+import com.aavss.abbiedemo.util.Utility;
 import com.aavss.abbiedemo.data.User;
 import com.aavss.abbiedemo.databinding.ActivityListBinding;
 
